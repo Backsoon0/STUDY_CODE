@@ -4,6 +4,7 @@
 
 int judge(char word[]);
 int sort(long long sum);
+void judge_or_0(int number);
 
 int main()
 {
@@ -24,6 +25,7 @@ int main()
     }
     //将sum进行排序
     sum = sort(sum);
+    judge_or_0(sum);
     printf("%lld",sum);
 }
 
@@ -76,4 +78,20 @@ int sort(long long sum)
         sum += num[i] * pow(100,i);
     }
     return sum;
+}
+
+//看前面是否应该加0
+void judge_or_0(int number)
+{
+    int count = 0;
+    while (number)
+    {
+        number /= 10;
+        count++;
+    }
+    if (count % 2 == 1)
+    {
+        printf("0");
+    }
+    
 }
