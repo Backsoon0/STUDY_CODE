@@ -1,11 +1,18 @@
 #include<stdio.h>
+#include<math.h>
 
-enum number {
-    A = 10,B,C,D,E,F,G
-};
+
 
 int main()
 {
     char number = -1;
-    printf("%d",number);
+    int Num=7689;
+    unsigned char i;
+    for ( i = 4; i > 0; i--)
+    {
+        printf("%c",(int)(Num/pow(10,i-1))%10+'0');
+    }
+    
+    
 }
+
