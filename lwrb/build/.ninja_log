@@ -1,0 +1,9 @@
+# ninja log v5
+4	271	7328819428358143	CMakeFiles/lwrb.dir/src/lwrb.c.obj	8d15e446f379dbe9
+2	319	7328812842031635	CMakeFiles/Main.dir/src/lwrb.c.obj	d56ce96ff7223b5f
+52	329	7328812842341524	CMakeFiles/Main.dir/src/lwrb_ex.c.obj	4bcb271af6c912d0
+54	393	7328819428658954	CMakeFiles/Main.dir/main.c.obj	a120ee5d59aad9b0
+630	1152	7328819437070303	C:/Users/LUCKBACK/Desktop/CODE/lwrb/Main.exe	97cab2644c46619f
+2	918	7328819678879072	build.ninja	fc2f309f58f46122
+272	630	7328819431949468	liblwrb.a	e5ba8197234df576
+2	951	7328819678879072	build.ninja	fc2f309f58f46122
