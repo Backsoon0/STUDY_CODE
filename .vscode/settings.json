@@ -1,7 +1,5 @@
 {
     "files.associations": {
-        "time.h": "c",
-        "lwrb.h": "c"
-    },
-    "cmake.sourceDirectory": "C:/Users/LUCKBACK/Desktop/CODE/lwrb"
+        "corecrt.h": "c"
+    }
 }

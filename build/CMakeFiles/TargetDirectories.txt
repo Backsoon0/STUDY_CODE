@@ -1,3 +1,0 @@
-C:/Users/LUCKBACK/Desktop/CODE/build/CMakeFiles/Main.dir
-C:/Users/LUCKBACK/Desktop/CODE/build/CMakeFiles/edit_cache.dir
-C:/Users/LUCKBACK/Desktop/CODE/build/CMakeFiles/rebuild_cache.dir

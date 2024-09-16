@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "include/lwrb.h"
+#include "lwrb.h"
 
 lwrb_t sbuff;
 uint8_t the_buff[10];
@@ -15,6 +15,6 @@ int main()
     {
         printf("%d\n",read[i]);
     }
-    
+    printf("hello world");
     return 0;
 }

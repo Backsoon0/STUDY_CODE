@@ -51,9 +51,10 @@ cmake_minimum_required(VERSION 3.15)
 
 project(Main LANGUAGES C)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include) #这样的话#include 头文件才不会报错
+
 add_library(lwrb    # 静态库名
     STATIC  #表示为静态库
-        #库中的文件，这里要注意，这里写的是什么，那么main中也要#include 什么，不要缺路径，否则会提示找不到文件
         src/include/lwrb/lwrb.h
         src/lwrb/lwrb.c
 )
@@ -79,11 +80,10 @@ set(EXECUTABLE_OUTPUT_PATH ..) # 设置可执行文件输出路径，..表示输
 
 # ${CMAKE_CURRENT_SOURCE_DIR}表示CMakeLists.txt所在的绝对路径
 file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c) # GLOB表示不递归搜索，SRC表示要保存的变量，自己设，后面就是.c文件的路径，后面一定要加/*.c
+#这样的话#include 头文件才不会报错
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include) # 表示头文件在哪个路径
 
 add_executable(Main ${SRC} main.c ) # ${SRC}表示变量的值，这是c文件，同时编译弄出可执行文件
 ```
-这样的好处是`#include " "`中""只需要放头文件就行，不用放相对路径
-
 
 暂时知道这么多
